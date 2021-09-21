@@ -40,11 +40,11 @@ function generatePassword() {
     charactersGenerated = charactersGenerated.concat(specialCharacters);
   }
 
-  var finalPassword;
+  var finalPassword = [];
   for (var i = 0; i < characterLimit; i++) {
-    finalPassword = charactersGenerated[Math.floor(Math.random() * charactersGenerated.length)];
-      return finalPassword;
+    finalPassword += charactersGenerated[Math.floor(Math.random() * charactersGenerated.length)];
   }
+    return finalPassword;
 }
 
 
