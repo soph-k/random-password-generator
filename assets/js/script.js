@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Determins how long the password your would like to be from a range of 8 to 128 characters
 function generatePassword() {
-  var passwordLength = prompt("Choose a password that is between 8 and 128 characters long."); // Ask user user their preference
+  var passwordLength = window.prompt("Choose a password that is between 8 and 128 characters long."); // Ask user user their preference
   var characterLimit = parseInt(passwordLength, 10); 
   if(isNaN(characterLimit) || characterLimit < 8 || characterLimit > 128) { //Makes sure that the user in put is a number between 8 and 128 characters
     alert("Error! You must choose a passwood that is between 8 and 128 numbers long.");
@@ -13,10 +13,10 @@ function generatePassword() {
   }
 
   // Asks user about what kind of characters they would like to have for their password through a ok or cancel interface 
-  var upperCaseCharactersQuestion = confirm("Would you like to have upper case characters in your password?");  // Asks user if they would like to have upper case characters
-  var lowerCaseCharactersQuestion = confirm("Would you like to have lower case characters in your password?"); // Asks user if they would like to have lower case characters
-  var numericalCharactersQuestion = confirm("Would you like to have you want numbers in your password?"); // Asks user if they would like to have numerical characters
-  var speicalCharactersQuestion = confirm("Would you like to have special characters in your password?"); // Asks user if they would like to have special characters
+  var upperCaseCharactersQuestion = window.confirm("Would you like to have upper case characters in your password?");  // Asks user if they would like to have upper case characters
+  var lowerCaseCharactersQuestion = window.confirm("Would you like to have lower case characters in your password?"); // Asks user if they would like to have lower case characters
+  var numericalCharactersQuestion = window.confirm("Would you like to have you want numbers in your password?"); // Asks user if they would like to have numerical characters
+  var speicalCharactersQuestion = window.confirm("Would you like to have special characters in your password?"); // Asks user if they would like to have special characters
   // If user did not select and option it will give the user an error message
   if (upperCaseCharactersQuestion === false && lowerCaseCharactersQuestion === false && numericalCharactersQuestion === false && speicalCharactersQuestion === false) { 
     alert("Use at least one character type.");
