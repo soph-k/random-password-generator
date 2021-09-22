@@ -1,11 +1,8 @@
-# random-password-generator
-
-
-# Portfolio Profile
+# Random Password Generator 
 
     This file contains the basic html, css, and javascript for a webpage the generates 
     random passwords to the user preferance. 
-    
+
     The preferance includes over 20 special character, both lower and upper case letters, 
     and numerical values ranging from 8 to 128 characters.
     
