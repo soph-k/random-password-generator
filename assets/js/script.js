@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 // Determins how long the password your would like to be from a range of 8 to 128 characters
 function generatePassword() {
   var passwordLength = window.prompt("Choose a password that is between 8 and 128 characters long."); // Ask user user their preference
-  var characterLimit = parseInt(passwordLength, 10); 
+  var characterLimit = parseInt(passwordLength); 
   if(isNaN(characterLimit) || characterLimit < 8 || characterLimit > 128) { //Makes sure that the user in put is a number between 8 and 128 characters
     alert("Error! You must choose a passwood that is between 8 and 128 numbers long.");
       return passwordLength ; //If user entered incorrect input it will return user
