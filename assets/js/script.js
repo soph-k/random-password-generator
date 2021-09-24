@@ -1,4 +1,16 @@
-// Add event listener to generate button
+// _____      ______      __       ____       ____       _
+// ||     \\   | _____|    //\\     | ___\\   / ____|    // \\
+// ||      \\  ||__       //  \\    ||    || | |___    / /   \ \
+// ||       || | __|     //____\\   ||___//   \ ____\ | |     | |
+// ||      //  ||_____  //      \\  || \\     _____ || \ \   / /
+// ||_____//   |______|//        \\ ||   \\  |_____ /    \\_//
+
+// Author: DearSO
+// GitHub: https://github.com/soph-k
+// Description: Sophk Security Password Generator 
+
+
+
 var generateBtn = document.querySelector("#generate");
 
 // Determins how long the password your would like to be from a range of 8 to 128 characters
@@ -7,7 +19,7 @@ function generatePassword() {
   var characterLimit = parseInt(passwordLength); 
   if(isNaN(characterLimit) || characterLimit < 8 || characterLimit > 128) { //Makes sure that the user in put is a number between 8 and 128 characters
     alert("Error! You must choose a passwood that is between 8 and 128 numbers long.");
-      return passwordLength ; //If user entered incorrect input it will return user
+      return generatePassword ; //If user entered incorrect input it will return user
   }
   else { //If user enters correct selection than it will continue user to the next part of the function
   }
@@ -20,7 +32,7 @@ function generatePassword() {
   // If user did not select and option it will give the user an error message
   if (upperCaseCharactersQuestion === false && lowerCaseCharactersQuestion === false && numericalCharactersQuestion === false && speicalCharactersQuestion === false) { 
     alert("Use at least one character type.");
-      return upperCaseCharactersQuestion; //If user choses zero character types than it will returen user to the first question 
+      return generatePassword; //If user choses zero character types than it will returen user to the first question 
   }
   else {//If user enters correct selection than it will continue user to the next part of the function
   }
@@ -49,8 +61,9 @@ function generatePassword() {
   var finalPassword = [];
   for (var i = 0; i < characterLimit; i++) {
     finalPassword += charactersGenerated[Math.floor(Math.random() * charactersGenerated.length)];
-  }
+    window.alert("Your password has been created");
     return finalPassword;
+  } 
 }
 
 
@@ -65,5 +78,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
