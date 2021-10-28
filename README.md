@@ -9,10 +9,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/HTML-yellow"/>
     <img src="https://img.shields.io/badge/CSS-gray"/>
-    <img src="https://img.shields.io/badge/Bootstrap-green"/>
     <img src="https://img.shields.io/badge/Javascript-red"/>
-    <img src="https://img.shields.io/badge/jQuery-blue"/>
-    <img src="https://img.shields.io/badge/OpenWeatherAPI-pink"/>
 </p>
 
 
