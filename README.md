@@ -51,7 +51,7 @@ and numerical values ranging from 8 to 128 characters.
 
 
 ## Preview
-![Preview](.\assests\images\screenshot.png)
+![Preview](.\assets\images\screenshot.png)
 
     
 ## Link to Deployed Repo
